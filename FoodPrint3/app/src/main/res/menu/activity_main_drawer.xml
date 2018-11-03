@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/app_bar_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/nav_my_foodprint"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My FoodPrint" />
+        <item
+            android:id="@+id/nav_shopping_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Shopping List" />
+        <item
+            android:id="@+id/nav_all_products"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="All Products" />
+    </group>
+
+
+</menu>
