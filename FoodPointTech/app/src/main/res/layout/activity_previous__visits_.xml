@@ -6,4 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Previous_Visits_Activity">
 
+    <SurfaceView
+        android:id="@+id/surfaceView2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="#2e8b66" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="PREVIOUS VISITS:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </android.support.constraint.ConstraintLayout>
