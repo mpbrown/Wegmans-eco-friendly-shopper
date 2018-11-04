@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "808453866938",
+    "firebase_url": "https://weghack-efc93.firebaseio.com",
+    "project_id": "weghack-efc93",
+    "storage_bucket": "weghack-efc93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808453866938:android:0b5652ae39f638bc",
+        "android_client_info": {
+          "package_name": "io.github.anthonymj.foodpointtech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808453866938-kg6gf2nobghq79f0rjds4i7hc7fleiu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxjewhUa88jhsY9XDz3Vz7qFO2nlfxps"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

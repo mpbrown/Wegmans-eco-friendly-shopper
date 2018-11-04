@@ -21,14 +21,6 @@ public class DeBug extends AppCompatActivity {
             public void onClick(View v) {
                 MilkTask task = new MilkTask();
                 task.execute();
-                DatabaseHelper dbH = new DatabaseHelper();
-                int respcode = dbH.get_myresponsecode();
-                String rscStr = Integer.toString(respcode);
-                String mytext = "nope";
-                if (mytext.isEmpty()){
-                    mytext = "yesss";
-                }
-                Toast.makeText(DeBug.this, mytext, Toast.LENGTH_LONG).show();
             }
         });
         button = findViewById(R.id.button6);
