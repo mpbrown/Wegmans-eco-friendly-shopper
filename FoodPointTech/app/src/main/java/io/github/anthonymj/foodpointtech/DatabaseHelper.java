@@ -91,10 +91,13 @@ public class DatabaseHelper
 		 } catch (IOException e) {
 			 // TODO Auto-generated catch block
 			 Log.i("tag",e.toString());
+			 return null;
 		 } catch (RuntimeException e){
 			 Log.i("tag",e.toString());
+			 return null;
 		 } catch (ParseException e) {
 			 Log.i("tag",e.toString());
+			 return null;
 		 }
 
 	 }
