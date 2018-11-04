@@ -8,27 +8,39 @@
     android:background="#eda41c">
 
     <LinearLayout
-        android:layout_width="103dp"
-        android:layout_height="393dp"
+        android:layout_width="385dp"
+        android:layout_height="514dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="tester"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="75dp" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Control"
-            tools:layout_editor_absoluteX="124dp"
-            tools:layout_editor_absoluteY="147dp" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="187dp"
+                android:layout_height="36dp"
+                android:text="tester"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="196dp"
+                android:layout_height="36dp"
+                android:text="Control"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="147dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="452dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/debugging" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
