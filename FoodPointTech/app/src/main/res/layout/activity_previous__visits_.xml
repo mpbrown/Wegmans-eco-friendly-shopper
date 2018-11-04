@@ -12,7 +12,8 @@
         android:layout_height="43dp"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="0dp"
-        android:background="#2e8b66" />
+        android:background="#2e8b74"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -21,6 +22,28 @@
         android:text="PREVIOUS VISITS:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="471dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="42dp"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </ScrollView>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
