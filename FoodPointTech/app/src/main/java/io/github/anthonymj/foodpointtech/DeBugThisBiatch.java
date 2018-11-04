@@ -1,6 +1,7 @@
 package io.github.anthonymj.foodpointtech;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,15 +21,8 @@ public class DeBugThisBiatch extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                DatabaseHelper dbH = new DatabaseHelper();
-                String s = dbH.getMilkInline();
-                int respcode = dbH.get_myresponsecode();
-                String rscStr = Integer.toString(respcode);
-                String mytext = "nope";
-                if (s.isEmpty()){
-                    mytext = "yesss";
-                }
-                Toast.makeText(DeBugThisBiatch.this, s, Toast.LENGTH_LONG).show();
+                MilkTask newTask = new MilkTask(getApplicationContext());
+                newTask.execute();
             }
         });
         button = findViewById(R.id.button6);
@@ -40,5 +34,11 @@ public class DeBugThisBiatch extends AppCompatActivity {
                 Toast.makeText(DeBugThisBiatch.this, "works", Toast.LENGTH_LONG).show();
             }
         });
+
+
     }
+
+
+
+
 }

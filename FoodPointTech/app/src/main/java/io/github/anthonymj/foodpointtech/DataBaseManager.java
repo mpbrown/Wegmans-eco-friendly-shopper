@@ -11,7 +11,7 @@ public class DataBaseManager {
 	private Connection connection;
 	
 	private void openConnection() {
-		connection = SqlHelper.connect();
+		connection = SqlHelper.conect();
 		if (connection == null) {
 			System.out.println("Not conencted to a data base");
 		}
