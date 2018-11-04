@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,17 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Previous_Visits_Activity.class));
+                //startActivity(new Intent(MainActivity.this, Previous_Visits_Activity.class));
+                DatabaseHelper dbH = new DatabaseHelper();
+                String s = dbH.getMilkInline();
+                int respcode = dbH.get_myresponsecode();
+                String rscStr = Integer.toString(respcode);
+                String mytext = "nope";
+                if (s.isEmpty()){
+                    mytext = "yesss";
+                }
+                Toast.makeText(MainActivity.this, s,
+                        Toast.LENGTH_LONG).show();
             }
         });
         button = findViewById(R.id.button2);
