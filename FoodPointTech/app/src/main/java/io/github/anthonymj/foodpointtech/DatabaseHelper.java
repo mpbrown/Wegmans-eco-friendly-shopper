@@ -46,7 +46,7 @@ public class DatabaseHelper
 				JSONParser parse = new JSONParser();
 				JSONObject jobj = (JSONObject)parse.parse(inline);
 				JSONArray prodList = (JSONArray) jobj.get("products");
-				debugText = prodList.get(2);
+				debugText = ((JSONObject) prodList.get(2)).toString();
 
 				for(int i = 0; i < prodList.size(); i++){
 					JSONObject product = (JSONObject) prodList.get(i);
