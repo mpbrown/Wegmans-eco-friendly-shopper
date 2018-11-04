@@ -57,8 +57,9 @@ public class DatabaseHelper
 				for(int i = 0; i < prodList.size(); i++){
 					JSONObject product = (JSONObject) prodList.get(i);
 
-					String skuStr = (String) product.get("sku");
-					int mysku = Integer.parseInt(skuStr);
+					Long mysku = (Long) product.get("sku");
+					Log.i("Debug", mysku.toString() + " DEBUG SKU LONG VALIE");
+//					int mysku = Integer.parseInt(skuStr);
 					//String myimgurl = getImgURL(mysku);
 					String myimgurl = "";
 
