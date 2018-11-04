@@ -15,7 +15,7 @@ public class DataBaseManager {
 	private void openConnection() {
 		connection = SqlHelper.conect();
 		if (connection == null) {
-			System.out.println("Not conencted to a data base");
+			Log.i("Task", "Not connected to data base");
 		}
 	}
 	
@@ -24,7 +24,7 @@ public class DataBaseManager {
 			connection.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Log.i("Task", e.toString());
 		}
     }
 	

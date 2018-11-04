@@ -21,11 +21,12 @@ public class DatabaseHelper
 	private String debugText = "";
 	private int _myresponsecode;
 	private ArrayList<String> cats;
+	DataBaseManager dbm;
 
 	public DatabaseHelper()
 	 {
+		 dbm = new DataBaseManager();
 
-	     DataBaseManager dbm = new DataBaseManager();
 
 		 try {
 			 //milk
@@ -33,8 +34,9 @@ public class DatabaseHelper
 			URL url = new URL("https://api.wegmans.io/products/categories/"+catid+"?api-version=2018-10-18&subscription-key=1474d845d1ef473d9645da89d85320b0");
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");
-			
-			String inline = "";
+			Log.i("Task", "After get");
+
+			 String inline = "";
 			
 			int responsecode = con.getResponseCode();
 			if(responsecode != 200){
@@ -57,10 +59,14 @@ public class DatabaseHelper
 
 					String skuStr = (String) product.get("sku");
 					int mysku = Integer.parseInt(skuStr);
-					String myimgurl = getImgURL(mysku);
+					//String myimgurl = getImgURL(mysku);
+					String myimgurl = "";
 
 					//System.out.println(product.get("sku")+" is "+product.get("name"));
-                    dbm.addToProducts(product.get("name").toString(), "Milk", mysku);
+					Log.i("Task", "before add to products");
+					dbm.addToProducts(product.get("name").toString(), "Milk", mysku, myimgurl);
+					Log.i("Task", "After add to products");
+
 				}
 
 			}

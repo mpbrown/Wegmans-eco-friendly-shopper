@@ -20,15 +20,8 @@ public class DeBugThisBiatch extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                DatabaseHelper dbH = new DatabaseHelper();
-                String s = dbH.getDebugText();
-                int respcode = dbH.get_myresponsecode();
-                String rscStr = Integer.toString(respcode);
-                String mytext = "nope";
-                if (s.isEmpty()){
-                    mytext = "yesss";
-                }
-                Toast.makeText(DeBugThisBiatch.this, s, Toast.LENGTH_LONG).show();
+                MilkTask task = new MilkTask();
+                task.execute();
             }
         });
         button = findViewById(R.id.button6);

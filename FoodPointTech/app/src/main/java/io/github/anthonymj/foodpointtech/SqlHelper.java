@@ -1,6 +1,8 @@
 package io.github.anthonymj.foodpointtech;
 
 
+import android.util.Log;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -11,6 +13,7 @@ public class SqlHelper {
 			Connection conect = DriverManager.getConnection("jdbc:sqlite:HumanityDB.db"); //this is possible if database is in project folder
 			return conect;
 		} catch (Exception e) {
+			Log.i("Task", e.toString());
 			return null;
 		}
 	}
