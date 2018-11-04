@@ -23,32 +23,24 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="Shopping \n List"
+            android:text="Previous\nVisits"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="37dp" />
+
+        <!--android:onClick="openPrev"-->
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="Food Point \n Graph" />
+            android:text="Shopping\nCart" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="catalogue" />
+            android:text="Product\nExpirations" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
-            android:text="Learn More" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
-            android:text="Stores near \n you" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

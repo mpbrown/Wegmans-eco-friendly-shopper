@@ -1,0 +1,13 @@
+package io.github.anthonymj.foodpointtech;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class Previous_Visits_Activity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_previous__visits_);
+    }
+}
