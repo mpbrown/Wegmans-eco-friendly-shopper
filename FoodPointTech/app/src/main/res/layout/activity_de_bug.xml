@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeBugThisBiatch">
+    tools:context=".DeBug"
+    android:background="#eda41c">
 
     <LinearLayout
         android:layout_width="103dp"
         android:layout_height="393dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="7dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Touch me \n Daddy\n UwU"
+            android:text="tester"
             tools:layout_editor_absoluteX="26dp"
             tools:layout_editor_absoluteY="75dp" />
 
@@ -25,7 +26,7 @@
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Control"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="147dp" />
     </LinearLayout>

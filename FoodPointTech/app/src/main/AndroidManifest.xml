@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.anthonymj.foodpointtech">
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,12 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Previous_Visits_Activity"
-            android:label="@string/app_name" />
         <activity android:name=".ShoppingCart" />
         <activity android:name=".Expiry" />
-        <activity android:name=".DeBugThisBiatch"></activity>
+        <activity android:name=".DeBug" />
+        <activity android:name=".PreviousVisits"></activity>
     </application>
 
 </manifest>

@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        android:background="#eda41c">
 
         <SearchView
             android:layout_width="383dp"
@@ -20,32 +21,66 @@
             tools:layout_editor_absoluteY="0dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="96dp"
             android:text="Previous\nVisits"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="37dp" />
+            tools:layout_editor_absoluteY="37dp"
+            android:background="#8c0101"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:includeFontPadding="true"/>
 
         <!--android:onClick="openPrev"-->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="Shopping\nCart" />
+            android:text="Shopping\nCart"
+            android:background="#8c0101"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:includeFontPadding="true"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="Product\nExpirations" />
+            android:text="Product\nExpirations"
+            android:background="#8c0101"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:includeFontPadding="true"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DEBUG this biatch" />
+            android:text="DEBUG"
+            android:background="#8c0101"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:includeFontPadding="true"/>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dog" />
 
 
     </LinearLayout>

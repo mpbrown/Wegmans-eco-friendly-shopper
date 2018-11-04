@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Food Point Tech</string>
+    <string name="previous_visits">PREVIOUS VISITS:</string>
 </resources>
