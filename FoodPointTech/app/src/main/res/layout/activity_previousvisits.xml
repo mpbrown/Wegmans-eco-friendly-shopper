@@ -67,11 +67,11 @@
                     android:id="@+id/button6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Button"
                     android:background="#8c0101"
-                    android:textColor="#ffffff"
                     android:fontFamily="casual"
-                    android:includeFontPadding="true"/>
+                    android:includeFontPadding="true"
+                    android:text="10/14\n$6.72"
+                    android:textColor="#ffffff" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -81,11 +81,11 @@
                     android:id="@+id/button7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Button"
                     android:background="#8c0101"
-                    android:textColor="#ffffff"
                     android:fontFamily="casual"
-                    android:includeFontPadding="true"/>
+                    android:includeFontPadding="true"
+                    android:text="10/22\n$56.12"
+                    android:textColor="#ffffff" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -95,11 +95,11 @@
                     android:id="@+id/button8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Button"
                     android:background="#8c0101"
-                    android:textColor="#ffffff"
                     android:fontFamily="casual"
-                    android:includeFontPadding="true"/>
+                    android:includeFontPadding="true"
+                    android:text="10/25\n$2.30"
+                    android:textColor="#ffffff" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -109,11 +109,11 @@
                     android:id="@+id/button9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Button"
                     android:background="#8c0101"
-                    android:textColor="#ffffff"
                     android:fontFamily="casual"
-                    android:includeFontPadding="true"/>
+                    android:includeFontPadding="true"
+                    android:text="11/01\n$14.27"
+                    android:textColor="#ffffff" />
             </LinearLayout>
         </ScrollView>
 

@@ -19,20 +19,16 @@ public class DeBug extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD:FoodPointTech/app/src/main/java/io/github/anthonymj/foodpointtech/DeBugThisBiatch.java
                 MilkTask task = new MilkTask();
                 task.execute();
-=======
                 DatabaseHelper dbH = new DatabaseHelper();
-                String s = dbH.getMilkInline();
                 int respcode = dbH.get_myresponsecode();
                 String rscStr = Integer.toString(respcode);
                 String mytext = "nope";
-                if (s.isEmpty()){
+                if (mytext.isEmpty()){
                     mytext = "yesss";
                 }
-                Toast.makeText(DeBug.this, s, Toast.LENGTH_LONG).show();
->>>>>>> pretty-boy:FoodPointTech/app/src/main/java/io/github/anthonymj/foodpointtech/DeBug.java
+                Toast.makeText(DeBug.this, mytext, Toast.LENGTH_LONG).show();
             }
         });
         button = findViewById(R.id.button6);
