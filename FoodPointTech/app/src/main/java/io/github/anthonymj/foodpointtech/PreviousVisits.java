@@ -35,13 +35,6 @@ public class PreviousVisits extends AppCompatActivity {
                 startActivity(new Intent(PreviousVisits.this, OctTwoTwo.class));
             }
         });
-        button = findViewById(R.id.button8);
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(PreviousVisits.this, OctTwoFi.class));
-            }
-        });
         button = findViewById(R.id.button9);
         button.setOnClickListener(new View.OnClickListener(){
             @Override

@@ -92,27 +92,13 @@
                     android:layout_height="2dp" />
 
                 <Button
-                    android:id="@+id/button8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#8c0101"
-                    android:fontFamily="casual"
-                    android:includeFontPadding="true"
-                    android:text="10/25\n$2.30"
-                    android:textColor="#ffffff" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp" />
-
-                <Button
                     android:id="@+id/button9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#8c0101"
                     android:fontFamily="casual"
                     android:includeFontPadding="true"
-                    android:text="11/01\n$14.27"
+                    android:text="11/01\n$14.87"
                     android:textColor="#ffffff" />
             </LinearLayout>
         </ScrollView>

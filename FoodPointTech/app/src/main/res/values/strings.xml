@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Food Point Tech</string>
     <string name="previous_visits">PREVIOUS VISITS:</string>
+    <string name="shopping_cart">Shopping Cart:</string>
+    <string name="textview">TextView</string>
+    <string name="tshopping_list">SHOPPING LIST:</string>
+    <string name="_10_apples_n_4l_water_n_01meters_of_land_n_0_co2">10 Apples .4L water .01meters of land ~0 CO2</string>
+    <string name="todo">TODO</string>
 </resources>

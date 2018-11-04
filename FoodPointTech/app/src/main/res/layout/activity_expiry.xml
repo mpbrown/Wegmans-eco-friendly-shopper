@@ -7,11 +7,40 @@
     tools:context=".Expiry"
     android:background="#eda41c">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/apple"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="86dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="357dp"
+            android:layout_height="64dp"
+            android:indeterminate="true"
+            android:max="7"
+            android:progress="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="23dp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="242dp"
+            app:srcCompat="@drawable/dog"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="381dp"
+            android:layout_height="232dp"
+            android:fontFamily="casual"
+            android:text="\tSorry! Ol'Max is sleepin.\n\t\t\tI'm sure he'll wake \n\t\twhen this feature is \n\t\tready for public use"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="294dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
