@@ -21,7 +21,7 @@ public class DeBugThisBiatch extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DatabaseHelper dbH = new DatabaseHelper();
-                String s = dbH.getMilkInline();
+                String s = dbH.getDebugText();
                 int respcode = dbH.get_myresponsecode();
                 String rscStr = Integer.toString(respcode);
                 String mytext = "nope";
