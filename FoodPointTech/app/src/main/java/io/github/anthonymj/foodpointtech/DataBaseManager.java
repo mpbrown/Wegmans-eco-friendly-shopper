@@ -1,6 +1,8 @@
 package io.github.anthonymj.foodpointtech;
 
 
+import android.util.Log;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -26,16 +28,17 @@ public class DataBaseManager {
 		}
     }
 	
-	public boolean addToProducts(String name, String catagory, int sku) {
+	public boolean addToProducts(String name, String catagory, int sku, String URL) {
 		openConnection();
-		String query = "INSERT INTO Products (ProductName, Catagory, sku) VALUES (?, ?, ?);"; // ? is place holders
+		String query = "INSERT INTO Products (ProductName, Catagory, sku, ImageURL) VALUES (?, ?, ?, ?);"; // ? is place holders
 		try (PreparedStatement preparedStatment = connection.prepareStatement(query)){
 			preparedStatment.setString(1, name);
 			preparedStatment.setString(2, catagory);
 			preparedStatment.setInt(3, sku);
+			preparedStatment.setString(4, URL);
 			preparedStatment.executeUpdate();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			Log.i("Task", e.toString());
 			return false;
 		} 
 		return true;
@@ -44,9 +47,9 @@ public class DataBaseManager {
 	public Impact getEnviormentalImpact(int sku) {
 		ResultSet rs = null;
 		String query = "select * from Products where sku=?;"; //? is place holders
-		try (PreparedStatement preparedStatment = connection.prepareStatement(query)){
-			preparedStatment.setInt(1, sku);
-			rs = preparedStatment.executeQuery();
+		try (PreparedStatement preparedStatement = connection.prepareStatement(query)){
+			preparedStatement.setInt(1, sku);
+			rs = preparedStatement.executeQuery();
 			if (rs.next()) { // if result comes in with a match it returns true
 				String catagory = rs.getString("Catagory");
 				ResultSet reset = null;
@@ -63,14 +66,14 @@ public class DataBaseManager {
 						throw new NoSuchElementException();
 					}
 				} catch (SQLException e) {
-					e.printStackTrace();
+					Log.i("Task", e.toString());
 					return null;
 				}
 			} else {
 				throw new NoSuchElementException();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			Log.i("Task", e.toString());
 			return null;
 		}
 	}
