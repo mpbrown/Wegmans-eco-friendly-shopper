@@ -41,6 +41,12 @@
             android:layout_height="96dp"
             android:text="Product\nExpirations" />
 
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEBUG this biatch" />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

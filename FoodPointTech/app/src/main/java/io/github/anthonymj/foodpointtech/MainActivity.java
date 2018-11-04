@@ -21,17 +21,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, Previous_Visits_Activity.class));
-                DatabaseHelper dbH = new DatabaseHelper();
-                String s = dbH.getMilkInline();
-                int respcode = dbH.get_myresponsecode();
-                String rscStr = Integer.toString(respcode);
-                String mytext = "nope";
-                if (s.isEmpty()){
-                    mytext = "yesss";
-                }
-                Toast.makeText(MainActivity.this, s,
-                        Toast.LENGTH_LONG).show();
+                startActivity(new Intent(MainActivity.this, Previous_Visits_Activity.class));
+
             }
         });
         button = findViewById(R.id.button2);
@@ -48,5 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Expiry.class));
             }
         });
+        button = findViewById(R.id.button4);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(MainActivity.this, DeBugThisBiatch.class));
+            }
+        });
+
     }
 }
