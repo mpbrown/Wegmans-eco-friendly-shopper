@@ -49,29 +49,32 @@ public class DatabaseHelper
 				JSONParser parse = new JSONParser();
 				JSONObject jobj = (JSONObject)parse.parse(inline);
 				JSONArray prodList = (JSONArray) jobj.get("products");
-				debugText = getImgURL((Integer) ((JSONObject) prodList.get(2)).get("sku"));
+
+				//debugText = getImgURL((Integer) ((JSONObject) prodList.get(2)).get("sku"));
 
 				for(int i = 0; i < prodList.size(); i++){
 					JSONObject product = (JSONObject) prodList.get(i);
 
-					System.out.println(product.get("sku")+" is "+product.get("name"));
+					String skuStr = (String) product.get("sku");
+					int mysku = Integer.parseInt(skuStr);
+					String myimgurl = getImgURL(mysku);
 
+					//System.out.println(product.get("sku")+" is "+product.get("name"));
+                    dbm.addToProducts(product.get("name").toString(), "Milk", mysku);
 				}
-				
+
 			}
 			
 			con.disconnect();
-			
-//			URL url2 =
-			
+
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			 e.printStackTrace();
+             Log.i("tag",e.toString());
 		} catch (RuntimeException e){
-			 e.printStackTrace();
+             Log.i("tag",e.toString());
 		} catch (ParseException e) {
-			 e.printStackTrace();
+             Log.i("tag",e.toString());
 		 }
 	 }
 
