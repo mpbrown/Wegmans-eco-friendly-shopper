@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Previous_Visits_Activity">
 
-    <TextureView
-        android:id="@+id/textureView2"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#2b8e6d"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
@@ -19,8 +25,9 @@
         android:layout_height="42dp"
         android:text="\tPREVIOUS VISITS:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#0015ff"
+        android:textColor="#ffffff"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
