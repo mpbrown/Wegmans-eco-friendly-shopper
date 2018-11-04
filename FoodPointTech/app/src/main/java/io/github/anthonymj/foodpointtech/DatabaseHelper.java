@@ -58,7 +58,7 @@ public class DatabaseHelper
 			
 			con.disconnect();
 			
-			URL url2 = 
+//			URL url2 =
 			
 			
 		} catch (IOException e) {
