@@ -10,8 +10,13 @@ import java.io.IOException;
 
 public class DatabaseHelper
 {
-	public static void main(String[] args) 
+	private String milkInline = "";
+	private int _myresponsecode;
+
+	public DatabaseHelper()
 	 {
+
+
 		 try {
 			 //milk
 			URL url = new URL("https://api.wegmans.io/products/categories/577-583?api-version=2018-10-18&subscription-key=1474d845d1ef473d9645da89d85320b0");
@@ -21,6 +26,7 @@ public class DatabaseHelper
 			String inline = "";
 			
 			int responsecode = con.getResponseCode();
+			_myresponsecode = 777;
 			if(responsecode != 200){
 				throw new RuntimeException("HttpResponseCode: "+responsecode);
 			}
@@ -31,6 +37,7 @@ public class DatabaseHelper
 				}
 				
 				System.out.println(inline);
+				milkInline = inline;
 				
 				
 			}
@@ -38,9 +45,16 @@ public class DatabaseHelper
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			milkInline = e.toString();
 		} catch (RuntimeException e){
-			System.out.println(e);
+			 milkInline = e.toString();
 		}
+	 }
+
+	 public String getMilkInline(){
+		return milkInline;
+	 }
+	 public int get_myresponsecode(){
+		return _myresponsecode;
 	 }
 }
