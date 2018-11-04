@@ -28,13 +28,13 @@ public class DataBaseManager {
 		}
     }
 	
-	public boolean addToProducts(String name, String catagory, int sku, String URL) {
+	public boolean addToProducts(String name, String catagory, Long sku, String URL) {
 		openConnection();
 		String query = "INSERT INTO Products (ProductName, Catagory, sku, ImageURL) VALUES (?, ?, ?, ?);"; // ? is place holders
 		try (PreparedStatement preparedStatment = connection.prepareStatement(query)){
 			preparedStatment.setString(1, name);
 			preparedStatment.setString(2, catagory);
-			preparedStatment.setInt(3, sku);
+			preparedStatment.setLong(3, sku);
 			preparedStatment.setString(4, URL);
 			preparedStatment.executeUpdate();
 		} catch (SQLException e) {
